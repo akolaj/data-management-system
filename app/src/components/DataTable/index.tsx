@@ -16,14 +16,13 @@ interface User {
 
 type UserKey = keyof User;
 
-
 function DataTable() {
     const [fakeData, setFakeData] = useState<User[]>([]);
     const [filteredData, setFilteredData] = useState<User[]>([]);
 
     const [paginationModel, setPaginationModel] = useState<GridPaginationModel>({
         page: 0,
-        pageSize: 5,
+        pageSize: 50,
     });
 
     const [search, setSearch] = useState<{ field: UserKey; query: string }>({
@@ -33,7 +32,7 @@ function DataTable() {
 
 
     useEffect(() => {
-        const data = generateFakeData(10);
+        const data = generateFakeData(5000);
         setFakeData(data);
     }, []);
 
@@ -80,4 +79,4 @@ function DataTable() {
     )
 }
 
-export default DataTable
+export default React.memo(DataTable);
