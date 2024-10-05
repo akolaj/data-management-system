@@ -5,42 +5,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `yarn install`
 
-### `npm start`
+Installs all packages
+
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Performance Management
 
-### `npm test`
+To optimize performance, this project utilizes a data grid that efficiently handles large datasets. Key features like sorting and filtering are supported by the data grid, allowing for responsive user interactions without significant delays. This approach minimizes the need for custom implementations, enhancing overall application speed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## State Management
 
-### `npm run build`
+State management is primarily handled using React's useEffect hook. This allows for the implementation of a responsive search feature that updates displayed data based on changes in the search input. Additionally, state variables manage user preferences such as dark/light mode, ensuring immediate UI responses to user interactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## UI Design: Dark/Light Mode
+The dark/light mode feature is implemented using the Material-UI (MUI) styles. By leveraging MUI's theming capabilities, the application toggles between light and dark modes based on user preferences. This approach provides a smooth transition between themes and enhances accessibility and user comfort.

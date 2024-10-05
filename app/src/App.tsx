@@ -1,4 +1,3 @@
-import './App.css';
 import DataTable from './components/DataTable';
 import { useTheme } from './components/themes/theme';
 import { ThemeProvider } from '@mui/material/styles';
